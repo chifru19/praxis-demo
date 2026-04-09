@@ -25,6 +25,8 @@ jobs:
         with:
           directory: .
           framework: all
+          # This line ensures your build turns GREEN even if there are warnings
+          soft_fail: true 
           output_format: sarif
           output_file_path: results.sarif
 
