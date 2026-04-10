@@ -13,15 +13,16 @@
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
         .mono { font-family: 'JetBrains Mono', monospace; }
-        .emergency-bar { background: #be123c; color: white; padding: 12px; font-weight: 800; font-size: 11px; letter-spacing: 1px; }
+        .emergency-bar { background: #be123c; color: white; padding: 12px; font-weight: 800; font-size: 11px; letter-spacing: 1px; transition: background 0.3s; }
+        .emergency-bar:hover { background: #9f1239; }
         .trust-shadow { box-shadow: 0 20px 50px -12px rgba(15, 23, 42, 0.1); }
     </style>
 </head>
 <body class="bg-white text-slate-900 selection:bg-blue-100">
 
-    <div class="emergency-bar text-center sticky top-0 z-[100] uppercase">
-        <i class="fas fa-shield-check mr-2"></i> INFRASTRUKTUR-STATUS: GESICHERT & AKTIV | NOTRUF: 112
-    </div>
+    <a href="tel:116117" class="emergency-bar text-center sticky top-0 z-[100] uppercase block">
+        <i class="fas fa-phone-alt mr-2"></i> Ärztlicher Notdienst: 116 117 | <i class="fas fa-ambulance mr-2 ml-4"></i> Notruf: 112
+    </a>
 
     <nav class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-[43px] z-50 px-6">
         <div class="max-w-7xl mx-auto py-4 flex justify-between items-center">
@@ -54,6 +55,9 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <button class="bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold text-sm shadow-xl shadow-blue-200 hover:bg-blue-700 transition">Termin online anfragen</button>
+                    <a href="https://www.116117.de" target="_blank" class="bg-white text-slate-900 border-2 border-slate-100 px-10 py-5 rounded-2xl font-bold text-sm hover:bg-slate-50 transition text-center">
+                        Bereitschaftsdienst 24h
+                    </a>
                 </div>
             </div>
             <div class="relative">
@@ -69,21 +73,45 @@
 
     <section id="security" class="py-32 px-6 bg-slate-900 text-white">
         <div class="max-w-7xl mx-auto">
-            <div class="mb-20">
+            <div class="mb-20 text-center lg:text-left">
                 <h3 class="text-3xl md:text-5xl font-black uppercase tracking-tighter italic mb-4">Digitale Sicherheit & Effizienz</h3>
-                <p class="text-slate-400 max-w-2xl font-medium uppercase text-xs tracking-widest">Infrastruktur-Audit & Implementierung</p>
+                <p class="text-slate-400 max-w-2xl font-medium uppercase text-xs tracking-widest mx-auto lg:mx-0">Infrastruktur-Audit & Implementierung</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="p-10 rounded-3xl bg-slate-800/50 border border-slate-700">
+                <div class="p-10 rounded-3xl bg-slate-800/50 border border-slate-700 hover:border-blue-500 transition">
                     <i class="fas fa-user-lock text-blue-400 text-2xl mb-6"></i>
                     <h4 class="text-xl font-bold mb-4 uppercase tracking-tight">Zero-Trust Hardening</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed">End-to-End Verschlüsselung aller Patientendaten-Übermittlungen.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">End-to-End Verschlüsselung aller Patientendaten-Übermittlungen zum Schutz Ihrer Privatsphäre.</p>
                 </div>
-                <div class="p-10 rounded-3xl bg-slate-800/50 border border-slate-700">
+                <div class="p-10 rounded-3xl bg-slate-800/50 border border-slate-700 hover:border-emerald-500 transition">
                     <i class="fas fa-bolt text-emerald-400 text-2xl mb-6"></i>
                     <h4 class="text-xl font-bold mb-4 uppercase tracking-tight">Cloudflare Edge</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed">Globale Content-Delivery für maximale Ladegeschwindigkeit und DDoS-Schutz.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Globale Content-Delivery für maximale Ladegeschwindigkeit und Rund-um-die-Uhr Schutz.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="leistungen" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h3 class="text-3xl font-black uppercase tracking-tighter">Unsere Leistungen</h3>
+            <div class="h-1.5 w-16 bg-blue-600 mx-auto mt-4"></div>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="p-10 bg-white border border-slate-100 rounded-[2.5rem] trust-shadow text-center">
+                <i class="fas fa-wave-square text-blue-500 text-3xl mb-6"></i>
+                <h5 class="text-lg font-bold mb-4">Sonographie</h5>
+                <p class="text-slate-500 text-sm">Hochmoderne Ultraschalldiagnostik der Bauchorgane und der Schilddrüse.</p>
+            </div>
+            <div class="p-10 bg-white border border-slate-100 rounded-[2.5rem] trust-shadow text-center">
+                <i class="fas fa-heartbeat text-blue-500 text-3xl mb-6"></i>
+                <h5 class="text-lg font-bold mb-4">EKG & Check-Up</h5>
+                <p class="text-slate-500 text-sm">Präventive Untersuchungen und Belastungs-EKG für Ihre Herzgesundheit.</p>
+            </div>
+            <div class="p-10 bg-white border border-slate-100 rounded-[2.5rem] trust-shadow text-center">
+                <i class="fas fa-vial text-blue-500 text-3xl mb-6"></i>
+                <h5 class="text-lg font-bold mb-4">Laboranalysen</h5>
+                <p class="text-slate-500 text-sm">Umfassende Blutuntersuchungen für eine präzise Diagnosestellung.</p>
             </div>
         </div>
     </section>
@@ -96,6 +124,7 @@
                 </div>
                 <h4 class="text-2xl font-black uppercase tracking-tighter mb-2">Abraham T. Abam</h4>
                 <p class="text-slate-500 text-sm font-bold uppercase tracking-widest">Facharzt für Innere Medizin</p>
+                <p class="mt-4 text-xs font-bold text-rose-600 uppercase tracking-widest border border-rose-200 bg-rose-50 px-3 py-1 rounded">24h Dienst: 116 117</p>
             </div>
 
             <div class="space-y-6">
@@ -107,14 +136,17 @@
             </div>
 
             <div class="space-y-6 lg:text-right">
-                <h5 class="text-[10px] font-black uppercase tracking-widest text-slate-400">Kontakt</h5>
+                <h5 class="text-[10px] font-black uppercase tracking-widest text-slate-400">Kontakt & Anfahrt</h5>
                 <p class="text-sm font-bold">Innerer Ring 5, 63486 Bruchköbel</p>
                 <p class="text-blue-600 font-bold">info@internist-bruchkoebel.de</p>
+                <div class="flex justify-center lg:justify-end gap-4 text-slate-400 mt-4">
+                   <a href="tel:116117" class="hover:text-rose-600"><i class="fas fa-phone-alt"></i> Notdienst</a>
+                </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto pt-10 flex justify-between items-center text-[9px] font-black uppercase tracking-[0.4em] text-slate-400">
+        <div class="max-w-7xl mx-auto pt-10 flex flex-col md:flex-row justify-between items-center text-[9px] font-black uppercase tracking-[0.4em] text-slate-400 gap-4">
             <p>© 2026 internist-bruchkoebel.de</p>
-            <p>Built by <a href="https://chifru19.pages.dev" class="text-blue-600">Frank Fru</a></p>
+            <p>Infrastructure Secured by <a href="https://chifru19.pages.dev" class="text-blue-600 hover:text-slate-900 transition">Frank Fru</a></p>
         </div>
     </footer>
 
