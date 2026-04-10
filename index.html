@@ -1,140 +1,130 @@
 <!DOCTYPE html>
-<html lang="de"> <head>
+<html lang="de">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta name="description" content="Praxis Abraham T. Abam - Internist und Hausarzt in Bruchköbel. Moderne Medizin für Ihre Gesundheit.">
-
-    <title>Praxis Abraham T. Abam | Internist & Hausarzt</title>
+    <title>Praxis Abraham T. Abam | Modern Medical Infrastructure</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .emergency-bar { background: #dc2626; color: white; padding: 10px; font-weight: 800; font-size: 11px; letter-spacing: 1px; }
+        .hero-gradient { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
+        .medical-card { transition: transform 0.3s ease; border: 1px solid rgba(0,0,0,0.05); }
+        .medical-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 leading-relaxed">
+<body class="bg-white text-slate-900 selection:bg-blue-100">
 
-    <div class="bg-red-700 text-white py-2 px-4 text-center text-sm font-bold sticky top-0 z-[100]">
-        <i class="fas fa-exclamation-triangle mr-2"></i> Ärztlicher Notdienst: 116 117 | Notruf: 112
+    <div class="emergency-bar text-center sticky top-0 z-[100] uppercase">
+        <i class="fas fa-phone-alt mr-2"></i> Ärztlicher Notdienst: 116 117 | <i class="fas fa-ambulance mr-2 ml-4"></i> Notruf: 112
     </div>
 
-    <nav class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-[36px] z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <nav class="bg-white/90 backdrop-blur-md border-b border-slate-100 sticky top-[36px] z-50 px-6">
+        <div class="max-w-7xl mx-auto py-5 flex justify-between items-center">
             <div>
-                <h1 class="text-xl font-extrabold text-blue-900 tracking-tight leading-none">ABRAHAM T. ABAM</h1>
+                <h1 class="text-xl font-black text-blue-900 leading-none">ABRAHAM T. ABAM</h1>
                 <p class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mt-1">Internist & Hausarzt</p>
             </div>
-            
-            <div class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-600 uppercase tracking-wide">
+            <div class="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-500">
                 <a href="#leistungen" class="hover:text-blue-600 transition">Leistungen</a>
-                <a href="#zeiten" class="hover:text-blue-600 transition">Sprechzeiten</a>
-                <a href="tel:06181976300" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">
-                    <i class="fas fa-phone-alt mr-2"></i> 06181 976300
-                </a>
+                <a href="#sprechzeiten" class="hover:text-blue-600 transition">Sprechzeiten</a>
+                <a href="tel:06181976300" class="text-blue-900 font-bold"><i class="fas fa-phone mr-1"></i> 06181 976300</a>
             </div>
         </div>
     </nav>
 
-    <section class="pt-20 pb-32 px-6">
+    <header class="hero-gradient pt-24 pb-32 px-6">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
             <div>
-                <div class="inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
-                    Willkommen in Ihrer Hausarztpraxis
-                </div>
-                <h2 class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 leading-[1.1]">
-                    Gesundheit ist <span class="text-blue-600">Vertrauenssache.</span>
+                <h2 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                    Gesundheit ist <br><span class="text-blue-600">Vertrauenssache.</span>
                 </h2>
-                <p class="text-xl text-slate-600 mb-10 max-w-lg leading-relaxed">
-                    Moderne Diagnostik und persönliche Betreuung im Herzen von Bruchköbel. Wir begleiten Sie auf Ihrem Weg zur Genesung.
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed font-medium">
+                    Moderne Diagnostik und persönliche Betreuung im Herzen von Bruchköbel. Wir begleiten Sie auf Ihrem Weg zur Genesung mit Sicherheit und Kompetenz.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <button class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-700 transition flex items-center justify-center gap-3 shadow-xl shadow-blue-100">
-                        <i class="fas fa-calendar-check text-lg"></i> Termin vereinbaren
-                    </button>
-                    <button class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition flex items-center justify-center gap-3">
-                        <i class="fas fa-file-prescription text-lg"></i> Rezept anfordern
-                    </button>
+                <div class="flex flex-wrap gap-4">
+                    <a href="mailto:info@internist-bruchkoebel.de" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-blue-200 hover:bg-slate-900 transition">Termin vereinbaren</a>
+                    <a href="#" class="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition">Rezept anfordern</a>
                 </div>
             </div>
-            
             <div class="relative">
-                <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-200/30 rounded-full blur-3xl"></div>
-                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" 
-                     alt="Medizinische Untersuchung" 
-                     class="rounded-[2.5rem] shadow-2xl relative z-10 border-8 border-white">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-200/50 rounded-full blur-3xl"></div>
+                <img src="image_5.png" alt="Dr. Abraham T. Abam in Beratung" class="rounded-[2.5rem] shadow-2xl relative z-10 border-8 border-white">
+            </div>
+        </div>
+    </header>
+
+    <section id="leistungen" class="py-24 px-6 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h3 class="text-3xl font-black text-slate-900 uppercase">Unsere Leistungen</h3>
+            <div class="h-1.5 w-16 bg-blue-600 mx-auto mt-4"></div>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-10 rounded-3xl medical-card text-center">
+                <i class="fas fa-wave-square text-blue-500 text-3xl mb-6"></i>
+                <h4 class="font-bold text-lg mb-3">Sonographie</h4>
+                <p class="text-slate-500 text-sm">Hochmoderne Ultraschalldiagnostik der Bauchorgane und der Schilddrüse.</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl medical-card text-center">
+                <i class="fas fa-heartbeat text-blue-500 text-3xl mb-6"></i>
+                <h4 class="font-bold text-lg mb-3">EKG & Check-Up</h4>
+                <p class="text-slate-500 text-sm">Präventive Untersuchungen und Belastungs-EKG für Ihre Herzgesundheit.</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl medical-card text-center">
+                <i class="fas fa-vial text-blue-500 text-3xl mb-6"></i>
+                <h4 class="font-bold text-lg mb-3">Laboranalysen</h4>
+                <p class="text-slate-500 text-sm">Umfassende Blutuntersuchungen für eine präzise Diagnosestellung.</p>
             </div>
         </div>
     </section>
 
-    <section id="leistungen" class="bg-slate-100 py-32 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20">
-                <h3 class="text-3xl font-extrabold text-slate-900 mb-4 uppercase tracking-tighter">Unsere Leistungen</h3>
-                <div class="h-1.5 w-20 bg-blue-600 mx-auto rounded-full"></div>
-            </div>
+    <footer id="sprechzeiten" class="bg-slate-950 text-white pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-16 items-start pb-16 border-b border-slate-800">
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300">
-                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
-                        <i class="fas fa-wave-square"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3">Sonographie</h4>
-                    <p class="text-slate-500 text-sm">Hochmoderne Ultraschalldiagnostik der Bauchorgane und der Schilddrüse.</p>
+            <div class="flex flex-col items-center lg:items-start">
+                <div class="w-32 h-32 bg-slate-800 rounded-full mb-6 border-4 border-blue-600 overflow-hidden flex items-center justify-center relative">
+                    <img src="image_5.png" alt="Dr. Abam Profil" class="absolute w-full h-full object-cover scale-[1.6] top-[10%] left-[-5%]">
                 </div>
-                
-                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300">
-                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3">EKG & Check-Up</h4>
-                    <p class="text-slate-500 text-sm">Präventive Untersuchungen und Belastungs-EKG für Ihre Herzgesundheit.</p>
-                </div>
-
-                <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300">
-                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
-                        <i class="fas fa-vial"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3">Laboranalysen</h4>
-                    <p class="text-slate-500 text-sm">Umfassende Blutuntersuchungen für eine präzise Diagnosestellung.</p>
-                </div>
+                <h4 class="text-2xl font-black mb-1 uppercase tracking-tighter">Abraham T. Abam</h4>
+                <p class="text-blue-400 text-xs font-bold uppercase tracking-[0.2em] mb-6">Facharzt für Innere Medizin</p>
+                <p class="text-slate-400 text-sm leading-relaxed text-center lg:text-left">Innerer Ring 5, 63486 Bruchköbel<br>info@internist-bruchkoebel.de</p>
             </div>
-        </div>
-    </section>
 
-    <footer class="bg-slate-900 text-white py-20 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
             <div>
-                <h2 class="text-2xl font-black mb-6 tracking-tighter uppercase italic">Abraham T. Abam</h2>
-                <p class="text-slate-400 max-w-xs text-sm">Innerer Ring 5, 63486 Bruchköbel</p>
-                <p class="text-slate-400 text-sm mt-2">info@internist-bruchkoebel.de</p>
-            </div>
-            
-            <div id="zeiten">
-                <h4 class="font-bold text-blue-400 uppercase tracking-widest text-xs mb-6">Sprechzeiten</h4>
-                <div class="grid grid-cols-2 gap-x-8 gap-y-2 text-sm">
-                    <span class="text-slate-400 italic">Mo - Fr:</span>
-                    <span class="font-bold">08:00 – 12:00 Uhr</span>
-                    <span class="text-slate-400 italic">Mo, Di, Do:</span>
-                    <span class="font-bold">15:00 – 17:00 Uhr</span>
+                <h5 class="text-xs font-black uppercase tracking-widest text-slate-600 mb-8">Sprechzeiten</h5>
+                <div class="space-y-4 text-sm font-bold">
+                    <div class="flex justify-between border-b border-slate-800 pb-2">
+                        <span>Mo - Fr:</span>
+                        <span class="text-blue-400">08:00 – 12:00 Uhr</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-800 pb-2">
+                        <span>Mo, Di, Do:</span>
+                        <span class="text-blue-400">15:00 – 17:00 Uhr</span>
+                    </div>
+                    <p class="text-[10px] text-slate-600 italic mt-4">Termine nach Vereinbarung</p>
                 </div>
+            </div>
+
+            <div class="text-center lg:text-right">
+                <h5 class="text-xs font-black uppercase tracking-widest text-slate-600 mb-8">System Status</h5>
+                <div class="inline-flex items-center bg-emerald-500/10 text-emerald-500 px-4 py-2 rounded-full text-[10px] font-bold mb-6">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></span>
+               SECURED BY FRANK FRU
+                </div>
+                <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest">
+                    Infrastruktur geschützt durch <br> Cloudflare Edge & Zero-Trust
+                </p>
             </div>
         </div>
         
-        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">
-            <p>© 2026 internist-bruchkoebel.de | Built by Frank Fru</p>
-            <div class="flex gap-8 mt-4 md:mt-0">
-                <a href="#" class="hover:text-white transition">Impressum</a>
-                <a href="#" class="hover:text-white transition">Datenschutz</a>
-            </div>
+        <div class="max-w-7xl mx-auto pt-8 flex flex-col md:flex-row justify-between items-center text-[9px] font-black uppercase tracking-[0.3em] text-slate-600">
+            <p>© 2026 internist-bruchkoebel.de</p>
+            <p>Built & Secured by <a href="https://chifru19.pages.dev" class="text-blue-600 hover:text-white transition">Frank Fru</a></p>
         </div>
     </footer>
 
